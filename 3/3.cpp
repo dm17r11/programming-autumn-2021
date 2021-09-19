@@ -3,8 +3,9 @@
 using namespace std;
 
 int main() {
-	int n;
-	cin >> n;
-	cout << (n / 2 + 1) * 2;
+	int n = 0;
+	int k = 0;
+	cin >> n >> k;
+	cout << k % n << "\n";
 	return 0;
 }

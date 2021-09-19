@@ -3,7 +3,9 @@
 using namespace std;
 
 int main() {
-	int a, b, t;
+	int a = 0;
+	int b = 0;
+	int t = 0;
 	cin >> a >> b;
 	t = a;
 	a = b;
