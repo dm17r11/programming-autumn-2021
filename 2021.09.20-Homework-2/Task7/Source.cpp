@@ -10,7 +10,7 @@ int main(int argc, char* argv)
 
 	cin >> n >> m >> k;
 
-	cout << ((k < n* m) && (k % n == 0 || k % m == 0) ? "YES" : "NO");
+	cout << ((k < n * m) && (k % n == 0 || k % m == 0) ? "YES" : "NO");
 
 	return EXIT_SUCCESS;
 }

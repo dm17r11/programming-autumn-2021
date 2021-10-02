@@ -12,15 +12,21 @@ int main(int argc, char* argv)
 
 	if (a > b)
 	{
-		swap(a, b);
+		int t = a;
+		a = b;
+		b = t;
 	}
 	if (b > c)
 	{
-		swap(b, c);
+		int t = c;
+		c = b;
+		b = t;
 	}
 	if (a > b)
 	{
-		swap(a, b);
+		int t = a;
+		a = b;
+		b = t;
 	}
 
 	if (a + b <= c) {
@@ -33,7 +39,7 @@ int main(int argc, char* argv)
 		return EXIT_SUCCESS;
 	}
 
-	cout << ((c * c < a* a + b * b) ? "acute" : "obtuse");
+	cout << ((c * c < a * a + b * b) ? "acute" : "obtuse");
 
 	return EXIT_SUCCESS;
 }
