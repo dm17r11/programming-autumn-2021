@@ -41,15 +41,17 @@ int main(int argc, char** argv)
         }
     }
     cout << p << endl;
-    cout << "FIRST MIN INDEX: " << arr[0] << endl;
     int min = arr[0];
+    int mini = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[0] < min)
+        if (arr[i] < min)
         {
-            arr[0] = min;
+            min = arr[i];
+            mini = i;
         }
     }
+    cout << "FIRST MIN INDEX: " << mini << endl;
     int max = arr[0];
     int maxi = 0;
     for (int i = 0; i < n; i++)
